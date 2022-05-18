@@ -65,6 +65,8 @@ public class EmployeeController {
             node.put("contractDateTo", null);
             node.put("contractSalaryPerDay", null);
         }
+        node.put("isActive", e.isActive());
+        node.put("dateCreated", e.getDateCreated());
 
         return node;
     }
